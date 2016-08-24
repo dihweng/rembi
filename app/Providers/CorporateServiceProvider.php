@@ -21,8 +21,9 @@ class CorporateServiceProvider extends ServiceProvider
      *
      * @return void
      */
-    public function register()
+     public function register()
     {
-        //
+        $this->app->bind('App\Repositories\Corporate\CorporateContract',
+            'App\Repositories\Corporate\EloquentCorporateRepository');
     }
 }

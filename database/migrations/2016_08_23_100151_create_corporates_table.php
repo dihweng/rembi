@@ -14,6 +14,11 @@ class CreateCorporatesTable extends Migration
     {
         Schema::create('corporates', function (Blueprint $table) {
             $table->increments('id');
+            $table->string('name');
+            $table->string('address');
+            $table->string('hmo_plan');
+            $table->integer('hmo_rate');
+            $table->date('hmo_expiry');
             $table->timestamps();
         });
     }

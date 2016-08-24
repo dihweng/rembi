@@ -23,6 +23,7 @@ class FamilyServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        //
+        $this->app->bind('App\Repositories\Family\FamilyContract',
+            'App\Repositories\Family\EloquentFamilyRepository');
     }
 }

@@ -23,6 +23,7 @@ class PaymentServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        //
+        $this->app->bind('App\Repositories\Payment\PaymentContract',
+            'App\Repositories\Payment\EloquentPaymentRepository');
     }
 }

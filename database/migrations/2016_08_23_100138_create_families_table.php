@@ -14,6 +14,11 @@ class CreateFamiliesTable extends Migration
     {
         Schema::create('families', function (Blueprint $table) {
             $table->increments('id');
+            $table->string('name');
+            $table->string('address');
+            $table->string('hmo_plan');
+            $table->string('hmo_rate');
+            $table->string('hmo_expiry');
             $table->timestamps();
         });
     }

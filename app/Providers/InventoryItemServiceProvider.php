@@ -23,6 +23,7 @@ class InventoryItemServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        //
+        $this->app->bind('App\Repositories\InventoryItem\InventoryItemcontract', 
+            'App\Repositories\InventoryItem\EloquentInventoryItemRepository');
     }
 }

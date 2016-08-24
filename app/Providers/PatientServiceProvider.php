@@ -23,6 +23,7 @@ class PatientServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->app->bind('App\Repositories\Patient\PatientContract', 'App\Repositories\Patient\EloquentPatientRepository');
+        $this->app->bind('App\Repositories\Patient\PatientContract',
+            'App\Repositories\Patient\EloquentPatientRepository');
     }
 }

@@ -167,6 +167,17 @@ return [
          * IOC & DI Service Providers...
          */
         App\Providers\PatientServiceProvider::class,
+        App\Providers\InventoryItemServiceProvider::class,
+        App\Providers\FamilyServiceProvider::class,
+        App\Providers\CorporateServiceProvider::class,
+        App\Providers\PaymentServiceProvider::class,
+        App\Providers\QueueServiceProvider::class,
+        App\Providers\LabTestServiceProvider::class,
+        App\Providers\LabTestResultServiceProvider::class,
+        App\Providers\BloodBankServiceProvider::class,
+        App\Providers\DonorServiceProvider::class,
+        App\Providers\RecipientServiceProvider::class,
+        
 
     ],
 
