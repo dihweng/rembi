@@ -1,0 +1,462 @@
+@media only screen and (max-width: 1024px) {
+    .col-xs-12{
+        display: none!important;
+    }
+                
+    body{
+        background-image: url(../img/bg.jpg)!important;
+        background-repeat: repeat-x!important;  
+    }
+                
+    #a button:hover{
+        background-color: #790000!important   
+    }
+                
+    .waves-red{
+        background-color: #790000!important
+    }
+                
+    #a button{
+        background-color: dimgray!important;
+        color: white!important
+    }
+                
+    #copy{
+        color:;
+        padding-top: 1%
+    }
+                
+    #img{
+        margin-top:5%; 
+        width:100%!important;
+        padding-top: 0px!important;
+    }
+                
+    #form{
+        width: 100%;
+        padding-top: 5%!important;
+        margin-top: 0px!important
+    }
+                
+}
+
+@media only screen and (max-width: 1600px) {
+    body{
+        background-image: url(../img/bg.jpg)!important;
+        background-repeat: repeat-x!important;  
+    }
+    
+    #form{
+        margin-top: 14%
+    }
+    
+    #pre{
+        background-color:transparent;
+        border: 0px;
+        margin-top:23%!important
+    }
+    
+        #pre h2{
+        background-color:transparent;
+        border: 0px;
+        margin-top:13%!important
+    }
+    
+    #img{
+        padding-top: 35%
+    }
+    #a button:hover{
+        
+        background-color: #790000!important   
+    } 
+    
+    .waves-red{
+        background-color: #790000!important
+    }
+    
+    #a button{
+        background-color: dimgray!important;
+        color: white!important
+    }
+    
+    #copy{
+        vertical-align:text-bottom;
+        color:grey;
+        padding-top: 2%
+    }  
+    #b li{
+        color: #790000!important
+    }
+    
+}
+
+@media only screen and (max-width: 1366px) {
+    body{
+        background-image: url(../img/bg.jpg)!important;
+        background-repeat: repeat-x!important;
+    }
+        
+    .container{
+        background-image: url(../img/bg.jpg)!important;
+        background-repeat: repeat-x!important;   
+    }
+        
+    #form{
+        margin-top: 14%
+    }
+        
+    #pre{
+        background-color:transparent;
+        border: 0px;
+        margin-top:30%!important
+    }
+        
+    #pre h2{
+        background-color:transparent;
+        border: 0px;
+        margin-top:13%
+    }
+    #img{
+        padding-top: 35%
+    }
+        
+    #a button:hover{
+        background-color: #790000!important    
+    } 
+        
+    .waves-red{
+        background-color: #790000!important
+    }
+        
+    #a button{
+        background-color: dimgray!important;
+        color: white!important
+    }
+        
+    #copy{
+        vertical-align:text-bottom;
+        color:grey;
+        padding-top: 2%
+    }
+        
+    #b li{
+        color: #790000!important
+    }
+        
+}
+
+@media only screen and (max-width: 1440px) {
+    body{
+        background-image: url(../img/bg.jpg)!important;!important; 
+    }
+            
+    #form{
+        margin-top: 14%;
+    }
+            
+    #pre{
+        background-color:transparent;
+        border: 0px;
+    }
+               
+    #pre h2{
+        background-color:transparent;
+        border: 0px;
+        margin-top:30%
+    }
+            
+    #img{
+        padding-top: 30%!important
+    }
+            
+    #a button:hover{
+        background-color: #790000!important      
+    }
+            
+    .waves-red{
+        background-color: #790000!important
+    }
+            
+    #a button{
+        background-color: dimgray!important;
+        color: white!important
+    }
+            
+    #copy{
+        vertical-align:text-bottom;
+        color:grey;
+        padding-top: 2%
+    } 
+            
+    #b li{
+        color: #790000!important
+    }
+            
+}
+
+@media only screen and (min-width: 2560px) {
+    body{
+        background-image: url(../img/bg.jpg)!important;!important;       
+    }
+                
+    #form{
+        margin-top: 8%;
+    }
+                
+    #pre{
+        background-color:transparent;
+        border: 0px
+}
+                
+    #pre h2{
+        background-color:transparent;
+        border: 0px;
+        margin-top:10%
+    }
+                
+    #img{
+        padding-top: 8%
+    }
+                
+    #a button:hover{
+        background-color: #790000!important            
+    } 
+                
+    .waves-red{
+        background-color: #790000!important
+    }
+                
+    #a button{
+        background-color: dimgray!important;
+        color: white!important
+    }
+                
+    #copy{
+        vertical-align:text-bottom;
+        color:grey;
+        padding-top: 2%
+    }  
+                
+    #b li{
+        color: #790000!important
+    }
+                
+}
+
+
+@media only screen and (max-width: 1280px) {
+    body{
+        background-image: url(../img/bg.jpg)!important;
+        background-repeat: repeat-x!important;
+    }
+        
+    .container{
+        background-image: url(../img/bg.jpg)!important;
+        background-repeat: repeat-x!important;   
+    }
+        
+    #form{
+        margin-top: 14%;
+    }
+        
+#pre{
+        background-color:transparent;
+        border: 0px;
+        margin-top:30%!important
+    }
+        
+    #pre h2{
+        background-color:transparent;
+        border: 0px;
+        margin-top:25%
+    }
+        
+    #img{
+        padding-top: 40%
+    }
+    #a button:hover{
+        background-color: #790000!important
+    }   
+        
+    .waves-red{
+        background-color: #790000!important
+    }
+        
+    #a button{
+        background-color: dimgray!important;
+        color: white!important
+    }
+        
+    #copy{
+        vertical-align:text-bottom;
+        color:grey;
+        padding-top: 2%
+    }  
+        
+    #b li{
+        color: #790000!important
+    }
+        
+}
+*/
+
+
+@media only screen and (max-width:736px) {
+    .col-xs-12{
+        display: none;
+    }
+    
+    body{
+        background-image: url(../img/bg.jpg)!important;
+        background-repeat: repeat-x!important; 
+    }
+    
+    #a button:hover{
+        background-color: #790000!important
+    }  
+    
+    .waves-red{
+        background-color: #790000!important
+    }
+    
+    #a button{
+        background-color: dimgray!important;
+        color: white!important
+    }
+    
+    #copy{
+        color:grey;
+        padding-top: 2%
+    }
+    
+    #img{
+        margin-top:15%!important; 
+        width:30%!important
+    }
+    
+    #form{
+        width: 100%!important;
+        padding-top: 20%!important; 
+    }
+    
+}
+
+@media only screen and (max-width:640px) {
+    .col-xs-12{
+        display: none;
+    }
+    
+    body{
+        background-image: url(../img/bg.jpg)!important;
+        background-repeat: repeat-x!important; 
+    }
+    
+    #a button:hover{
+        background-color: #790000!important    
+    }
+    
+    .waves-red{
+        background-color: #790000!important
+    }
+    
+    #a button{
+        background-color: dimgray!important;
+        color: white!important
+    }
+    
+    #copy{
+        color:;
+        padding-top: 5%!important                    
+    }
+    
+    #img{
+        margin-top:15%; width:50%!important
+    }
+    
+    #form{
+        width: 100%!important;
+        padding-top: 20%!important;
+    }
+    
+}
+
+@media only screen and (max-width:768px) {
+    .col-xs-12{
+        display: none;
+    }
+    
+    body{
+        background-image: url(../img/bg.jpg)!important;
+        background-repeat: repeat-x!important;  
+    }
+    
+    #a button:hover{
+        background-color: #790000!important    
+    }   
+    
+    .waves-red{
+        background-color: #790000!important
+    }
+    
+    #a button{
+        background-color: dimgray!important;
+        color: white!important
+    }
+    #copy{
+        color:grey;
+        padding-top: 2%  
+    }
+    
+    #img{
+        margin-top:10%; 
+        width:30%!important;
+        padding-top: 0px!important;
+    }
+    
+    #form{
+        width: 100%;
+        padding-top: 10%!important; 
+        margin-top: 0px!important
+    }
+    
+}
+
+@media only screen and (max-width:480px) {
+    .col-xs-12{
+        display: none;
+    }
+    
+    body{
+        background-image: url(../img/bg.jpg)!important;
+        background-repeat: repeat-x!important;  
+    }
+    
+    #a button:hover{
+        background-color: #790000!important    
+    }   
+    
+    .waves-red{
+        background-color: #790000!important
+    }
+    
+    #a button{
+        background-color: dimgray!important;
+        color: white!important
+    }
+    #copy{
+        color:grey;
+        padding-top: 2%!important  
+    }
+    
+    #img{
+        margin-top:10%!important; 
+        width:60%!important;
+        padding-top: 0px!important
+    }
+    
+    #form{
+        width: 100%!important;
+        padding-top: 15%!important; 
+    }
+    
+}

@@ -11,6 +11,7 @@ use App\Repositories\LabTestResult\LabTestResultContract;
 class LabTestResultController extends Controller
 {
     protected $repo;
+    
     public function __construct(LabTestResultContract $labTestResultContract) {
         $this->repo = $labTestResultContract;
     }
@@ -30,7 +31,7 @@ class LabTestResultController extends Controller
         ]);
         
         $labTestResult = $this->repo->create($request);
-        if ($labTestResults->id) {
+        if ($labTestResult->id) {
             return back()
                 ->with('success', 'Test Result created successfully.');
         }else {
