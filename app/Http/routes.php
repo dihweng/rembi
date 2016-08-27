@@ -9,10 +9,9 @@ Route::group(['middleware' => 'web'], function() {
     Route::post('login', 'AuthenticationController@doLogin');
 
     Route::group(['prefix' => 'frontdesk'], function() {
-        Route::get('/', 'FrontdeskController@welcome');
-    });
-
-    Route::group(['prefix' => 'account'], function() {
-        Route::get('/', 'AccountController@welcome');
+        Route::get('/', 'FrontdeskController@dashboard')->name('frontdesk_dashboard');
+        Route::get('patient/register', 'FrontdeskController@registerPatient')->name('register_patient');
+        Route::get('family/register', 'FrontdeskController@registerFamily')->name('register_family');
+        Route::get('corporate/register', 'FrontdeskController@registerCorporate')->name('register_corporate');
     });
 });
