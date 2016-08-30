@@ -18,13 +18,13 @@
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label>First Name</label>
-                                        <input type="text" class="form-control" placeholder="First Name" name="first_name">
+                                        <input type="text" class="form-control" placeholder="First Name" name="first_name" value="{{old('first_name')}}">
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label>Last Name</label>
-                                        <input type="text" class="form-control" placeholder="Last Name" name="last_name">
+                                        <input type="text" class="form-control" placeholder="Last Name" name="last_name" value="{{old('last_name')}}">
                                     </div>
                                 </div>
                             </div>
@@ -33,7 +33,7 @@
                                 <div class="col-md-3">
                                     <div class="form-group">
                                         <label> Year </label>
-                                        <select class="form-control" name="dob_year">
+                                        <select class="form-control" name="dob_year" value="{{old('dob_year')}}">
                                             <option> 1990 </option>
                                         </select>
                                     </div>
@@ -41,7 +41,7 @@
                                 <div class="col-md-3">
                                     <div class="form-group">
                                         <label> Month </label>
-                                        <select class="form-control" name="dob_month">
+                                        <select class="form-control" name="dob_month" value="{{old('dob_month')}}">
                                             <option> January </option>
                                         </select>
                                     </div>
@@ -49,7 +49,7 @@
                                 <div class="col-md-3">
                                     <div class="form-group">
                                         <label> Day </label>
-                                        <select class="form-control" name="dob_day">
+                                        <select class="form-control" name="dob_day" value="{{old('dob_day')}}">
                                             <option> 1 </option>
                                         </select>
                                     </div>
@@ -66,20 +66,20 @@
                                 <div class="col-md-6">
                                     <div class="form-group">
                                        <label>Occupation</label>
-                                       <input type="text" class="form-control" placeholder="Occupation" name="occupation">
+                                       <input type="text" class="form-control" placeholder="Occupation" name="occupation" value="{{old('occupation')}}">
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
                                        <label>Tribe</label>
-                                       <input type="text" class="form-control" placeholder="Tribe" name="tribe">
+                                       <input type="text" class="form-control" placeholder="Tribe" name="tribe" value="{{old('tribe')}}">
                                     </div>
                                 </div>
                         </div>
                         <div class="row">
                             <div class="col-md-6">
                                 <label> Marital Status </label>
-                                  <select class="form-control" name="marital_status">
+                                  <select class="form-control" name="marital_status" value="{{old('marital_status')}}">
                                      <option value="single"> Single </option>
                                      <option value="married"> Married </option>
                                      <option value="divorced"> Divorced </option>
@@ -88,7 +88,7 @@
                             </div>
                             <div class="col-md-6">
                                 <label> Religion </label>
-                                  <select class="form-control" name="religion">
+                                  <select class="form-control" name="religion" value="{{old('religion')}}">
                                      <option> Christianity </option>
                                      <option> Islam </option>
                                      <option> Others </option>
@@ -98,17 +98,17 @@
                         <div class="row">
                             <div class="col-md-6">
                                 <label> Next Of Kin </label>
-                                <input type="text" class="form-control" placeholder="Next Of Kin" name="next_of_kin">
+                                <input type="text" class="form-control" placeholder="Next Of Kin" name="next_of_kin" value="{{old('next_of_kin')}}">
                             </div>
                             <div class="col-md-6">
                                 <label> Photo </label>
-                                <input type="file" name="patient_photo" accept="image/*">
+                                <input type="file" name="patient_photo" accept="image/*" value="{{old('patient_photo')}}">
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-md-12">
                                 <label> Address </label>
-                                <input type="textarea" name="address" class="form-control"/>
+                                <input type="textarea" name="address" class="form-control" value="{{old('address')}}"/>
                             </div>
                         </div>
                             <div>

@@ -18,13 +18,13 @@
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label>Name</label>
-                                        <input type="text" class="form-control" placeholder="Name" name="name">
+                                        <input type="text" class="form-control" placeholder="Name" name="name" value="{{old('name')}}">
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label>Address</label>
-                                        <input type="text" class="form-control" placeholder="Address" name="address">
+                                        <input type="text" class="form-control" placeholder="Address" name="address" value="{{old('address')}}">
                                     </div>
                                 </div>
                             </div>
@@ -32,13 +32,13 @@
                                 <div class="col-md-6">
                                      <div class="form-group">
                                         <label>HMO Plan</label>
-                                        <input type="text" class="form-control" placeholder="HMO Plan" name="hmo_plan">
+                                        <input type="text" class="form-control" placeholder="HMO Plan" name="hmo_plan" value="{{old('hmo_plan')}}">
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label>HMO Rate</label>
-                                        <input type="text" class="form-control" placeholder="HMO Rate" name="hmo_rate">
+                                        <input type="text" class="form-control" placeholder="HMO Rate" name="hmo_rate" value="{{old('hmo_rate')}}">
                                     </div>
                                 </div>
                             </div>
@@ -46,7 +46,7 @@
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label>HMO Expiry</label>
-                                        <input type="text" class="form-control" placeholder="HMO Expiry" name="hmo_expiry">
+                                        <input type="text" class="form-control" placeholder="HMO Expiry" name="hmo_expiry" value="{{old('hmo_expiry')}}">
                                     </div>
                                 </div>
                             </div>
