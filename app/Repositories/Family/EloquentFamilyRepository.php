@@ -2,7 +2,7 @@
 
 namespace App\Repositories\Family;
 
-use App\Repositories\Family\PatientContract;
+use App\Repositories\Family\FamilyContract;
 
 use App\Family;
 
@@ -26,10 +26,10 @@ class EloquentFamilyRepository implements FamilyContract
         return Family::find($familyid);
     }
     
-    public function findAll($familyid){
+    public function findAll(){
         return Family::all();
     }
-    
+
     public function remove($familyid) {
         $family = $this->finfById($familyid);
         return $family->delete();

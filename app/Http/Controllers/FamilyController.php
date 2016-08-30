@@ -15,7 +15,7 @@ class FamilyController extends Controller
         $this->repo = $familyContract;
     }
     
-    public function index() {
+    public function showindex() {
         $families = $this->repo->findAll();
         return view('family.index', ['families', $families]);
     }

@@ -25,7 +25,7 @@ class CreatePatientsTable extends Migration
             $table->string('tribe');
             $table->enum('religion', ['Christianity', 'Islam', 'Other']);
             $table->string('occupation');
-            $table->enum('marital_status', ['Single', 'Married', 'Divorced', 'Widowed']);
+            $table->enum('marital_status', ['single', 'married', 'divorced', 'widowed']);
             $table->text('address');
             $table->string('next_of_kin');
             $table->string('patient_photo_path');

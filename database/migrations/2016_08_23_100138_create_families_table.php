@@ -18,7 +18,7 @@ class CreateFamiliesTable extends Migration
             $table->string('address');
             $table->string('hmo_plan');
             $table->string('hmo_rate');
-            $table->string('hmo_expiry');
+            $table->date('hmo_expiry');
             $table->timestamps();
         });
     }

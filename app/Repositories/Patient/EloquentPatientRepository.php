@@ -50,8 +50,7 @@ class EloquentPatientRepository implements PatientContract
         $patient->address = $request->address;
         $patient->next_of_kin = $request->next_of_kin;
         $patient->age = $this->calculateAge(
-            $request->dob_year,$request->dob_month,$request->dob_day
-        );
+        $request->dob_year,$request->dob_month,$request->dob_day);
         
         $destination = 'uploads/patients';
         $extension = $request->file('patient_photo')->getClientOriginalExtension();

@@ -2,10 +2,12 @@
 
 namespace App\Repositories\Corporate;
 
+use App\Corporate;
 use App\Repositories\Corporate\CorporateContract;
 
 class EloquentCorporateRepository implements CorporateContract
 {
+    
     public function create($request) {
         $corporate = new Corporate();
         $this->setCorporateProperties($corporate, $request);

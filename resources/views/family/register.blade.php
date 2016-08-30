@@ -13,18 +13,36 @@
                         <h4 class="title">Family Details</h4>
                     </div>
                     <div class="content">
-                        {{Form::open()}}
+                        {{Form::open(['route' => 'family_store', 'method' => 'post'])}}
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <label>First Name</label>
-                                        <input type="text" class="form-control" placeholder="First Name" name="first_name">
+                                        <label>Name</label>
+                                        <input type="text" class="form-control" placeholder="Name" name="name">
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <label>Last Name</label>
-                                        <input type="text" class="form-control" placeholder="Last Name" name="last_name">
+                                        <label>Address</label>
+                                        <input type="text" class="form-control" placeholder="Address" name="address">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                     <div class="form-group">
+                                        <label>HMO Plan</label>
+                                        <input type="text" class="form-control" placeholder="HMO Plan" name="hmo_plan">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>HMO Rate</label>
+                                        <input type="text" class="form-control" placeholder="HMO Rate" name="hmo_rate">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>HMO Expiry</label>
+                                        <input type="text" class="form-control" placeholder="HMO Expiry" name="hmo_expiry">
                                     </div>
                                 </div>
                             </div>
@@ -35,6 +53,8 @@
                 </div>
             </div>
             <div class="col-md-4">
+                @include('layouts.sessions')
+                @include('layouts.errors')
             </div>
         </div>
     </div>
