@@ -13,7 +13,7 @@
                         <h4 class="title">Family Details</h4>
                     </div>
                     <div class="content">
-                        {{Form::open(['route' => 'family_store', 'method' => 'post'])}}
+                        {{Form::open(['route' => 'store_family', 'method' => 'post'])}}
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="form-group">

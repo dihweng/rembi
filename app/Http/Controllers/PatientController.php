@@ -15,18 +15,16 @@ class PatientController extends Controller
     public function __construct(PatientContract $patientContract) {
         $this->repo = $patientContract;
     }
-    
-
 
     public function index() {
         $patients = $this->repo->findAll();
         return view('patient.index', ['patients', $patients]);
     }
-    
+
     public function show() {
         return view('patient.create');
     }
-    
+
     public function store(Request $request) {
         $this->validate($request, [
             'first_name' => 'required',
@@ -43,7 +41,7 @@ class PatientController extends Controller
             'next_of_kin' => 'required',
             'patient_photo' => 'required',
         ]);
-        
+
         if ($request->hasFile('patient_photo')) {
             if ($request->file('patient_photo')->isValid()) {
                 $patient = $this->repo->create($request);
@@ -57,26 +55,26 @@ class PatientController extends Controller
                 }
             } else {
                 return back()
-                        ->withInput()
-                        ->with('error', 'The Patient Photo you selected is Invalid. Try again');
+                    ->withInput()
+                    ->with('error', 'The Patient Photo you selected is Invalid. Try again');
             }
         } else {
             return back()
-                        ->withInput()
-                        ->with('error', 'Select a Patient Photo and try again');
+                ->withInput()
+                ->with('error', 'Select a Patient Photo and try again');
         }
     }
-    
+
     public function remove() {
         // Ajax
     }
-    
+
     public function showEdit($id) {
         $patient = $this->repo->findById($id);
         return view('patient.edit', ['patient', $patient]);
     }
-    
+
     public function edit(Request $request, $id) {
-        
+
     }
 }

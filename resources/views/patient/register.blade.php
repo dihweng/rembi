@@ -13,7 +13,7 @@
                         <h4 class="title">Patient Details</h4>
                     </div>
                     <div class="content">
-                        {{Form::open(array('route' => 'patient_store', 'method' => 'POST'))}}
+                        {{Form::open(array('route' => 'store_patient', 'method' => 'POST', 'files' => 'true'))}}
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="form-group">
@@ -56,7 +56,7 @@
                                 </div>
                                 <div class="col-md-3">
                                     Sex
-                                   <div class> 
+                                   <div class>
                                        <label><input type="radio" value="male" name="sex">Male</label><br/>
                                        <label><input type="radio" value="female" name="sex">Female</label>
                                     </div>

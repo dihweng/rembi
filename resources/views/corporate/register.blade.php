@@ -13,7 +13,7 @@
                         <h4 class="title">Corporate Details</h4>
                     </div>
                     <div class="content">
-                        {{Form::open(['route' => 'corporate_store', 'method' => 'post'])}}
+                        {{Form::open(['route' => 'store_corporate', 'method' => 'post'])}}
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="form-group">
@@ -27,6 +27,8 @@
                                         <input type="text" class="form-control" placeholder="Address" name="address">
                                     </div>
                                 </div>
+                            </div>
+                            <div class="row">
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label>HMO Plan</label>
@@ -39,6 +41,8 @@
                                         <input type="text" class="form-control" placeholder="HMO Rate" name="hmo_rate">
                                     </div>
                                 </div>
+                            </div>
+                            <div class="row">
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label>HMO Expiry</label>
@@ -46,8 +50,9 @@
                                     </div>
                                 </div>
                             </div>
-                            <button type="submit" class="btn btn-info btn-fill pull-right">Register Corporate</button>
-                            <div class="clearfix"></div>
+                        </div>
+                        <button type="submit" class="btn btn-info btn-fill pull-right">Register Corporate</button>
+                        <div class="clearfix"></div>
                         </form>
                     </div>
                 </div>

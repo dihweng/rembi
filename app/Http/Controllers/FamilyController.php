@@ -14,16 +14,7 @@ class FamilyController extends Controller
     public  function __construct(FamilyContract $familyContract) {
         $this->repo = $familyContract;
     }
-    
-    public function showindex() {
-        $families = $this->repo->findAll();
-        return view('family.index', ['families', $families]);
-    }
-    
-    public function show() {
-        return view('family.create');
-    }
-    
+
     public function store(Request $request) {
         $this->validate($request, [
             'name' => 'required',
@@ -32,7 +23,7 @@ class FamilyController extends Controller
             'hmo_rate' => 'required',
             'hmo_expiry' => 'required',
         ]);
-        
+
         $family = $this->repo->create($request);
         if ($family->id) {
             return back()
@@ -43,17 +34,9 @@ class FamilyController extends Controller
                 ->with('error', 'There was a problem registering the Family. Try again');
         }
     }
-    
+
     public function showEdit($id) {
         $family = $this->repo->findById($id);
         return view('family.edit', ['family', $family]);
-    }
-    
-    public function remove() {
-        
-    }
-    
-    public function edit(Request $request, $id){
-        
     }
 }
