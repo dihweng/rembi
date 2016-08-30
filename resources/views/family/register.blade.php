@@ -27,6 +27,8 @@
                                         <input type="text" class="form-control" placeholder="Address" name="address">
                                     </div>
                                 </div>
+                            </div>
+                            <div class="row">
                                 <div class="col-md-6">
                                      <div class="form-group">
                                         <label>HMO Plan</label>
@@ -39,6 +41,8 @@
                                         <input type="text" class="form-control" placeholder="HMO Rate" name="hmo_rate">
                                     </div>
                                 </div>
+                            </div>
+                            <div class="row">
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label>HMO Expiry</label>
