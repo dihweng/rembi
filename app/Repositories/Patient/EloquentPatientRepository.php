@@ -5,6 +5,7 @@ namespace App\Repositories\Patient;
 use App\Repositories\Patient\PatientContract;
 
 use App\Patient;
+use DateTime;
 
 class EloquentPatientRepository implements PatientContract
 {

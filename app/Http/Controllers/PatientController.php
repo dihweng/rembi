@@ -36,7 +36,7 @@ class PatientController extends Controller
             'tribe' => 'required',
             'religion' => 'required',
             'occupation' => 'required',
-            'martial_status' => 'required',
+            'marital_status' => 'required',
             'address' => 'required',
             'next_of_kin' => 'required',
             'patient_photo' => 'required',
