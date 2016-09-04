@@ -9,4 +9,5 @@ interface PatientContract
     public function remove($patientid);
     public function findById($patientid);
     public function findAll();
+    public function searchPatient($request);
 }

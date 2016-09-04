@@ -77,4 +77,12 @@ class PatientController extends Controller
     public function edit(Request $request, $id) {
 
     }
+    
+    public function searchPatientId(Request $request)
+    {
+        $patient = $this->repo->searchPatient($request);
+        return back()
+            ->withInput()
+            ->with('patient', $patient);
+    }
 }

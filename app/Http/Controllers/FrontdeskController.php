@@ -23,4 +23,9 @@ class FrontdeskController extends Controller
     public function registerCorporate() {
         return view('corporate.register');
     }
+    
+    public function welcomePatient() {
+        return view('patient.welcome');
+    }
+     
 }

@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Repositories\InventoryItem
+namespace App\Repositories\InventoryItem;
 
 interface InventoryItemContract{
     public function create($request);

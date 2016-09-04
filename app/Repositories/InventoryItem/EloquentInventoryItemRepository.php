@@ -10,14 +10,14 @@ class EloquentInventoryItemRepository implements InventoryItemContract
 {
     public function create($request) {
         $inventoryItem = new InventoryItem();
-        $inventoryItem->setInventoryItemProperties($inventoryItem, $request);
+        $this->setInventoryItemProperties($inventoryItem, $request);
         $inventoryItem->save();
         return $inventoryItem;
     }
 
     public function edit($inventoryitemid, $request) {
         $inventoryItem = $this->findById($inventoryitemid);
-        $inventoryItem->setInventoryItemProperties($inventoryItem, $request);
+        $this->setInventoryItemProperties($inventoryItem, $request);
         $inventoryItem->save();
         return $inventoryItem;
     }
@@ -52,7 +52,7 @@ class EloquentInventoryItemRepository implements InventoryItemContract
         $inventoryItem->department = $request->department;
         $inventoryItem->stock = $request->stock;
         $inventoryItem->critical_level = $request->critical_level;
-        $inventoryItem->manufaturer = $request->manufacturer;
+        $inventoryItem->manufacturer = $request->manufacturer;
         $inventoryItem->manufacture_date = $request->manufacture_date;
         $inventoryItem->expiry_date = $request->expiry_date;
     }

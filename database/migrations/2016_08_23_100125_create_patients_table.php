@@ -29,6 +29,7 @@ class CreatePatientsTable extends Migration
             $table->text('address');
             $table->string('next_of_kin');
             $table->string('patient_photo_path');
+            $table->string('hospital_id')->unique();
             $table->timestamps();
         });
     }

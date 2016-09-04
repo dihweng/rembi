@@ -9,6 +9,15 @@ use DateTime;
 
 class EloquentPatientRepository implements PatientContract
 {
+    
+    private function generateHospitalId() {
+        $patients = Patient::all();
+        $count = $patients->count();
+        $count++;
+        $hospitalid  = "rembi" . $count;
+        return $hospitalid;
+    }
+    
     public function create($request) {
         $patient = new Patient();
         $this->setPatientProperties($patient, $request);
@@ -50,6 +59,7 @@ class EloquentPatientRepository implements PatientContract
         $patient->marital_status = $request->marital_status;
         $patient->address = $request->address;
         $patient->next_of_kin = $request->next_of_kin;
+        $patient->hospital_id = $this->generateHospitalId();
         $patient->age = $this->calculateAge(
         $request->dob_year,$request->dob_month,$request->dob_day);
         
@@ -66,4 +76,13 @@ class EloquentPatientRepository implements PatientContract
         $to   = new DateTime('today');
         return $from->diff($to)->y;
     }
+    
+    public function searchPatient($request)
+    {
+        $search = $request->hospital_id;
+        $patient = Patient::where('hospital_id', $search)->first();
+        return $patient;
+    }
+    
+   
 }

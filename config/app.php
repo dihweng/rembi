@@ -179,6 +179,7 @@ return [
         App\Providers\DonorServiceProvider::class,
         App\Providers\RecipientServiceProvider::class,
         App\Providers\UserServiceProvider::class,
+        App\Providers\ServiceServiceProvider::class,
         
 
     ],

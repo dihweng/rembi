@@ -29,6 +29,12 @@
 					<p>REGISTER CORPORATE</p>
 				</a>
 			</li>
+			<li class="@yield('wel_patient_active')">
+				<a href="{{route('patient_welcome')}}">
+					<i class="pe-7s-cash"></i>
+					<p> WELCOME PATIENT</p>
+				</a>
+			</li>
 		</ul>
 	</div>
 </div>

@@ -21,12 +21,12 @@ class InventoryItemController extends Controller
     }
     
     public function show() {
-        return view('inventoryitem.create');
+        return view('inventory.show');
     }
     
-    public function store(Request $requests)
+    public function store(Request $request)
     { 
-        $this->validate($requests, [
+        $this->validate($request, [
             'name' => 'required',
             'unit_price' => 'required',
             'department' => 'required',
@@ -37,7 +37,7 @@ class InventoryItemController extends Controller
             'expiry_date' => 'required'
         ]);
         
-        $inventoryItem = $this->inventoryitem->create($request);
+        $inventoryItem = $this->repo->create($request);
         if($inventoryItem->id) {
             return back()
                 ->with('success', 'Inventory Item successfully created.');

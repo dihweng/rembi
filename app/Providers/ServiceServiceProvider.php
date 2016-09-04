@@ -4,7 +4,7 @@ namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
 
-class InventoryItemServiceProvider extends ServiceProvider
+class ServiceServiceProvider extends ServiceProvider
 {
     /**
      * Bootstrap the application services.
@@ -23,7 +23,7 @@ class InventoryItemServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->app->bind('App\Repositories\InventoryItem\InventoryItemContract', 
-            'App\Repositories\InventoryItem\EloquentInventoryItemRepository');
+        $this->app->bind('App\Repositories\Service\ServiceContract',
+            'App\Repositories\Service\EloquentServiceRepository');
     }
 }
