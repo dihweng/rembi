@@ -1,7 +1,7 @@
 @extends('frontdesk.main')
 
 @section('content')
-    <div>FRONT DESK</div>
+    <div>DASHBOARD</div>
 @stop
 
 @section('dashboard_active')

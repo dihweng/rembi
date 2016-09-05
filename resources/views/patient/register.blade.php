@@ -32,7 +32,7 @@
                             <div class="row">
                                 <div class="col-md-3">
                                     <div class="form-group">
-                                        <label> Year </label>
+                                        <label>Year</label>
                                         <select class="form-control" name="dob_year" value="{{old('dob_year')}}">
                                             <option> 1990 </option>
                                         </select>
@@ -40,7 +40,7 @@
                                 </div>
                                 <div class="col-md-3">
                                     <div class="form-group">
-                                        <label> Month </label>
+                                        <label>Month</label>
                                         <select class="form-control" name="dob_month" value="{{old('dob_month')}}">
                                             <option> January </option>
                                         </select>
@@ -48,7 +48,7 @@
                                 </div>
                                 <div class="col-md-3">
                                     <div class="form-group">
-                                        <label> Day </label>
+                                        <label>Day</label>
                                         <select class="form-control" name="dob_day" value="{{old('dob_day')}}">
                                             <option> 1 </option>
                                         </select>
@@ -78,7 +78,7 @@
                         </div>
                         <div class="row">
                             <div class="col-md-6">
-                                <label> Marital Status </label>
+                                <label>Marital Status</label>
                                   <select class="form-control" name="marital_status" value="{{old('marital_status')}}">
                                      <option value="single"> Single </option>
                                      <option value="married"> Married </option>
@@ -87,7 +87,7 @@
                                   </select>
                             </div>
                             <div class="col-md-6">
-                                <label> Religion </label>
+                                <label>Religion</label>
                                   <select class="form-control" name="religion" value="{{old('religion')}}">
                                      <option> Christianity </option>
                                      <option> Islam </option>
@@ -97,17 +97,17 @@
                         </div>
                         <div class="row">
                             <div class="col-md-6">
-                                <label> Next Of Kin </label>
+                                <label>Next Of Kin</label>
                                 <input type="text" class="form-control" placeholder="Next Of Kin" name="next_of_kin" value="{{old('next_of_kin')}}">
                             </div>
                             <div class="col-md-6">
-                                <label> Photo </label>
+                                <label>Photo</label>
                                 <input type="file" name="patient_photo" accept="image/*" value="{{old('patient_photo')}}">
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-md-12">
-                                <label> Address </label>
+                                <label>Address</label>
                                 <input type="textarea" name="address" class="form-control" value="{{old('address')}}"/>
                             </div>
                         </div>

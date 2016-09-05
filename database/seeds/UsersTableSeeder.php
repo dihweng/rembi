@@ -22,5 +22,17 @@ class UsersTableSeeder extends Seeder
             'password' => bcrypt('account'),
             'department' => 'account'
         ]);
+
+        DB::table('users')->insert([
+            'username' => 'lab',
+            'password' => bcrypt('lab'),
+            'department' => 'lab'
+        ]);
+
+        DB::table('users')->insert([
+            'username' => 'bloodbank',
+            'password' => bcrypt('bloodbank'),
+            'department' => 'bloodbank'
+        ]);
     }
 }
